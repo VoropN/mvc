@@ -1,0 +1,14 @@
+.game {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) ;
+  justify-content: center;
+  text-align: center;
+  align-items: self-start;
+}
+.error_pic, .right_pic {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(70px, 1fr));
+}
+img {
+  max-width: 100%;
+}
