@@ -9,7 +9,6 @@ export class ModelGame {
         female: 0,
         errorsArr: [],
         rightArr: [],
-        status: null
       },
       gender: null,
       picture: null
@@ -28,11 +27,9 @@ export class ModelGame {
     if (gender === this.user.gender) {
       this.user.info[gender]++;
       this.user.info.rightArr.push(this.user.picture);
-      this.user.info.status = 'rightArr';
     } else {
       this.user.info.errors++;
       this.user.info.errorsArr.push(this.user.picture);
-      this.user.info.status = 'errorsArr';
     }
   }
 
